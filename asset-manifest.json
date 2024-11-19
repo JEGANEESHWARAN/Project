@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/Project/static/css/main.366eb608.css",
+    "main.js": "/Project/static/js/main.16577b78.js",
+    "static/js/453.479ddf15.chunk.js": "/Project/static/js/453.479ddf15.chunk.js",
+    "static/media/poop.jpg": "/Project/static/media/poop.b6af49d76d8af0669c04.jpg",
+    "static/media/boom.png": "/Project/static/media/boom.3eccdb106b1d3717d095.png",
+    "static/media/ece.jpg": "/Project/static/media/ece.8c765d9a532ba611db7e.jpg",
+    "static/media/logical.png": "/Project/static/media/logical.4741b5d978fd699efe98.png",
+    "static/media/bestpart.webp": "/Project/static/media/bestpart.80d859c55fbd211e2794.webp",
+    "static/media/c.png": "/Project/static/media/c.3b497f3592b6d228e3fc.png",
+    "static/media/java.jpg": "/Project/static/media/java.bce577efbe933f4f06fa.jpg",
+    "static/media/login-img.jfif": "/Project/static/media/login-img.3fed139865ed41511766.jfif",
+    "static/media/about.webp": "/Project/static/media/about.273c82e0ccdd37276deb.webp",
+    "static/media/logoo.png": "/Project/static/media/logoo.3488df2f02fa81fd424d.png",
+    "static/media/plusbutton_87904-removebg-preview.png": "/Project/static/media/plusbutton_87904-removebg-preview.d82a7ace6574bf256a9e.png",
+    "static/media/verbal-reasoning-x2.png": "/Project/static/media/verbal-reasoning-x2.43b9cc91f35eb2f364cf.png",
+    "static/media/us.jpg": "/Project/static/media/us.c3f09d407dd339a6f1ff.jpg",
+    "static/media/ReactJS.jpg": "/Project/static/media/ReactJS.cd3028a32832aff391b3.jpg",
+    "static/media/Non-Verbal-Reasoning.png": "/Project/static/media/Non-Verbal-Reasoning.c29fee28ad046486f32f.png",
+    "static/media/c++.webp": "/Project/static/media/c++.77f768f3510e4ca26299.webp",
+    "static/media/create.svg": "/Project/static/media/create.489699e1bd9c0573d88db4b6a72b755e.svg",
+    "static/media/access.svg": "/Project/static/media/access.f9bd7046072f2b4f676a7fa9f566d331.svg",
+    "static/media/insghts.svg": "/Project/static/media/insghts.df25c30d7479d5a12ee417489975d804.svg",
+    "index.html": "/Project/index.html",
+    "main.366eb608.css.map": "/Project/static/css/main.366eb608.css.map",
+    "main.16577b78.js.map": "/Project/static/js/main.16577b78.js.map",
+    "453.479ddf15.chunk.js.map": "/Project/static/js/453.479ddf15.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.366eb608.css",
+    "static/js/main.16577b78.js"
+  ]
+}
