@@ -112,7 +112,6 @@ function App() {
                 </>
               }
             />
-
             <Route
               path="/answer"
               element={
@@ -169,8 +168,8 @@ function App() {
           </Routes>
         </header>
       </Router>
+      <QuestionPage/>
     </div>
   );
 }
-
 export default App;
