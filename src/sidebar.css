@@ -1,0 +1,38 @@
+/* sidebar.css */
+.sidebar {
+    /* background-color: #007081; Dark background for sidebar */
+    height: 100%; /* Full viewport height */
+    padding: 20px;
+    width: 100%;
+    
+  }
+  
+  .sidebar ul {
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar .nav-link {
+   
+    font-size: 1.2rem;
+  }
+  
+  .sidebar .nav-link:hover {
+   
+    text-decoration: underline;
+  }
+  
+  .sidebar .nav-item {
+    margin-bottom: 15px;
+  }
+  @media screen and (max-width:900px){
+   .sidebar{
+    width: 100%;
+   } 
+  }
+  @media (max-width: 900px) {
+    .col-md-3 {
+        margin: 0%;
+
+    }
+  }

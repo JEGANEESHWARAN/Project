@@ -1,0 +1,282 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("./images/poop.jpg");
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007c80;
+    text-align: center;
+    box-shadow: 0 0 10px black; 
+}
+
+.di{
+    display: flex;
+    align-items: center;
+}
+.bu{
+    margin-right: 50px;
+}
+.hi{
+    color: white;
+}
+.bu input{
+    margin-right: 50px;
+    width: 90%;
+    font-size: 1.3rem;
+    height: 40px;
+    color: #ffffff;
+   border: 2px solid white;
+    border-radius: 5px;
+    background-color: #097a96;
+}
+.bu input:hover{
+    /* box-shadow: 0 0 5px rgb(20, 199, 11); */
+    background-color: #ffbf34;
+}
+.home-img img {
+    height: 50%;
+    justify-content: center;
+    width: 40%;
+}
+section{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: nowrap;
+}
+    section .contentBx {
+        display: flex;
+        margin-top: 2%;
+        justify-content: center;
+        width: 100%;
+    }
+    section .contentBx .formBx{
+        padding-top: 2%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        border: 1px solid;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0 0 1cap;
+        border-radius: 4px;
+        
+    }
+    section .contentBx .formBx h2{
+        color: #607d8b;
+        font-weight: 600;
+        font-size: 1.5em;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        border-bottom: 4px solid #ff4584;
+        display: inline-block;
+        letter-spacing: 1px;  
+    }
+    section .contentBx .formBx .inputBx{
+        /* background-color: #607db8; */
+         width: 100%;
+        /* margin-left: -20%;  */
+        margin-bottom: 2px;
+    }
+    section .contentBx .formBx .inputBx span{
+        font-size: 16px;
+        margin-bottom: 5px;
+        display: inline-block;
+        color: #e61616;
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
+    section .contentBx .formBx .inputBx input{
+        width: 100%;
+        padding: 10px 30px;
+        margin-bottom: 5%;
+        outline: none;
+        font-weight: 400;
+        font-size: 16px;
+        border: 1px solid #607db8;
+        letter-spacing: 1px;
+        color: #000000;
+        background: transparent;
+        border-radius: 10px;
+    }
+    section .contentBx .formBx .inputBx select{
+        width: 100%;
+        padding: 10px 20px;
+        outline: none;
+        font-weight: 400;
+        margin-bottom: 5%;
+        font-size: 16px;
+        border: 1px solid #607db8;
+        letter-spacing: 1px;
+        color: #000000;
+        background: transparent;
+        border-radius: 10px;
+    }
+    section .contentBx .formBx .inputBx #hi-1{
+        display: flex;
+        padding: 10px 20px;
+        outline: none;
+        font-weight: 400;
+        font-size: 16px;
+        border: 1px solid #607db8;
+        letter-spacing: 1px;
+        color: #000000;
+        background: transparent;
+        border-radius: 10px;
+    }
+
+    section .contentBx .formBx .inputBx input[type="button"]{
+        background: #ff4584;
+        color: #fff;
+        outline: none;
+        border: none;
+        cursor: pointer;
+
+    }
+    section .contentBx .formBx .inputBx  input[type="button"]:hover{
+        background:#f53677 ;
+    }
+    section .contentBx .formBx .remember a{
+        margin-bottom: 10px;
+        color: #607d8b;
+        font-size: 400;
+        text-decoration: none;
+        
+        font-size: 16px;
+    }
+    section .contentBx .formBx p{
+        color: #607d8b;
+    }
+    section .contentBx .formBx p a{
+        color: #ff4584;
+    }
+    .inputBx #hi-1{
+        width: 100%;
+        height: 130px;
+        color: #000000;
+        margin-bottom: 10%;
+    }
+      
+.pop {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black with transparency */
+  }
+  
+  /* Modal content */
+  .mode  {
+    background-color: #ffffff;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #888;
+    width: 30%;
+    text-align: center;
+  }
+.pop p{
+    font-size: 1.3rem;
+    margin-bottom: 10%;
+}
+
+.mode input{
+    width: 20%;height: 40px;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: #eeeeee;
+    border: 1px slateblue;
+    background-color: #0056b3;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+.pop #cancel{
+    background-color: #0056b3;
+}
+    @media(max-width:900px){
+        section .contentBx{
+            width: 90%;
+            display: flex;
+            height: 600px;
+            justify-content: center;
+            z-index: 1;
+            margin: 5%;
+            background-color: #eeeeee;
+            border-radius: 10px;
+        }
+        
+        section .contentBx .formBx{
+            width: 70%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 4px;
+            margin: 5px;
+            background-color: #ffffff;
+        }
+    }
+    
+    @media(max-width:500px){
+        section .contentBx{
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            margin: 8%;
+            background-color: #fff;
+           border-radius: 0;
+        }
+
+        section .contentBx .formBx{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            margin: 5px;
+        }
+    }
+    section .contentBx .formBx h3{
+       color: #607d8b;
+       margin-bottom: 10%; 
+    }
+    section .contentBx .formBx i {
+display: inline-block;
+height: 40px;
+width: 40px;
+margin: 0 10px 10px 0;
+text-align: center;
+line-height: 40px;
+color: #ff4584;
+border-radius: 50%;
+background-color: #000000;
+}
+
+section .contentBx .formBx i:hover {
+color: rgb(0, 0, 0);
+background-color: #ff4584;
+}
+@media screen and (m-width:900px) {
+section{
+    overflow-x: hidden;
+}
+body{
+    overflow-y: hidden;
+}
+}

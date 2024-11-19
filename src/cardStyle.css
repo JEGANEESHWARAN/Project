@@ -1,0 +1,17 @@
+/* cardStyles.css */
+.card-body {
+    padding: 20px; /* Adjust padding if needed */
+  }
+  
+  .card-title {
+    font-size: 1.25rem; /* Larger font size for the card title */
+  }
+  
+  .card-text {
+    font-size: 1rem; /* Font size for card text */
+  }
+  
+  .btn {
+    margin: 0 5px; /* Margin around buttons */
+  }
+  

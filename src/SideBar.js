@@ -1,0 +1,69 @@
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import './sidebar.css'
+import 'bootstrap/dist/css/bootstrap.min.css'; // Ensure Bootstrap CSS is imported
+
+const Sidebar = () => {
+  const [showModal, setShowModal] = useState(false);
+const navigate=useNavigate();
+  const handleLogoutClick = () => {
+    setShowModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
+
+  const handleConfirmLogout = () => {
+    navigate('/');
+    // Logic for logging out, such as clearing session or token
+    // window.location.href = "/logout"; // Redirect to logout URL
+  };
+
+  return (
+    <>
+      <nav className="sidebar">
+        {/* <h2 className="text-light">Admin Menu</h2> */}
+        <ul className="nav flex-column">
+          <li className="nav-item">
+            <Link to="/admin" className="nav-link ">Dashboard</Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/testtable" className="nav-link ">My Test</Link>
+          </li>
+          <li className="nav-item">
+          <Link to="/userList" className="nav-link ">User management</Link>
+          </li>
+          <li className="nav-item">
+            <Link to='/admin' className="nav-link ">Feedback</Link>
+          </li>
+          <li className="nav-item">
+          <Link to="/AdminPage" className="nav-link ">My Account</Link>
+          </li>
+          <li className="nav-item">
+            <a href="#" className="nav-link " onClick={handleLogoutClick}>Logout</a>
+          </li>
+        </ul>
+      </nav>
+
+      {/* Bootstrap Modal */}
+      <div className={`modal fade ${showModal ? 'show d-block' : ''}`} tabIndex="-1" role="dialog" aria-labelledby="logoutModalLabel" aria-hidden="true" style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
+        <div className="modal-dialog" role="document">
+          <div className="modal-content">
+            
+            <div className="modal-body text-center">
+              <p>Are you sure you want to logout?</p>
+            </div>
+            <div className="modal-footer">
+              <button type="button" className="btn btn-secondary" onClick={handleCloseModal}>Cancel</button>
+              <button type="button" className="btn btn-primary" onClick={handleConfirmLogout}>Logout</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Sidebar;

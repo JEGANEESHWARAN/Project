@@ -1,0 +1,44 @@
+/* Ensure this CSS file is in the same directory or adjust the path accordingly */
+
+.radio-input {
+    position: absolute;
+    opacity: 0;
+    /* width: 400px; */
+  }
+  
+  .radio-label {
+    display: inline-block;
+    padding: 10px;
+    margin: 5px 0;
+    border: 2px solid #e0e0e044;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    background-color: aliceblue;
+    position: relative;
+    transition: background-color 0.2s ease;
+  }
+  
+  .radio-input:checked + .radio-label {
+    background-color: #03cf3690;
+    color: #fff;
+  }
+  
+  .option-item {
+    position: relative;
+    /* padding-left: 35px; */
+    
+    margin-bottom: 10px;
+  }
+  
+  .option-item input[type="radio"] {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  @media screen and (max-width:700px){
+    .radio-label {
+        width: 100%;
+    }
+  }
